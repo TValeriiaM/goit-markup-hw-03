@@ -4,7 +4,58 @@ body {
     background-color: #fff;
 }
 
-ul {list-style-type: none;}
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 10%0;
+    height: auto;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.secction {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.topof-site .container {
+    display: flex;
+    border-bottom: 1px solid #E7E9FC;
+    justify-content: space-between;
+}
+
+.navigation-items,
+.adress-items {
+    display: flex;
+    column-gap: 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 .link {
     text-decoration: none;
@@ -18,6 +69,7 @@ ul {list-style-type: none;}
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .logo-accent {
@@ -45,6 +97,10 @@ address {
     font-style: normal;
 }
 
+.adress-list {
+    justify-content: flex-end;
+}
+
 .adress-items-link {
     color: #434455;
     font-size: 16px;
@@ -62,6 +118,9 @@ address {
 
 .main-title {
     background:#2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    align-items: center;
 }
 
 h1 {
@@ -71,6 +130,10 @@ h1 {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 
 .main-button {
@@ -82,6 +145,9 @@ h1 {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    display: block;
+    margin: 0 auto;
+    padding: 16px 32px;
 }
 
 .main-button:hover {
@@ -92,39 +158,112 @@ h1 {
     background-color: #404BBF;
 }
 
-.our-team {
-    background:#F4F4FD;
-}
-
-.team-member {
-    background:#FFF;
-}
-
 h2 {
-    color:#2E2F42;
+    color: #2E2F42;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
-.section-text {
+.section-text,
+.advant-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
 h3 {
-    color:#2E2F42;
+    color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.advantages-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+}
+
+.advantages-item {
+    display: flex;
+    width: width: calc((100% - 72px) / 4);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.section-subtitle {
+    margin-bottom: 8px;
+}
+
+.our-team {
+    background:#F4F4FD;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+}
+
+.team-member {
+    background:#FFF;
+    text-align: center;
+    display: inline-flex;
+    width: calc((100% - 72px) / 4)
+    padding-bottom: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    display: flex;
+    width: calc((100% - 48px) / 3);
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.portfolio-descr, .team-descr {
+    padding: 32px 16px;
+}
+
 .final {
     background:#2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .logo-down {
@@ -145,8 +284,10 @@ h3 {
 .footer-text {
     color:#F4F4FD;
     font-family: Roboto;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-top: 16px;
+    width: 264px;
 }
