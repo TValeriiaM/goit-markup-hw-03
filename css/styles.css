@@ -39,16 +39,19 @@ img {
 
 .topof-site .container {
     display: flex;
-    border-bottom: 1px solid #E7E9FC;
     justify-content: space-between;
+}
+
+.topof-site {
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .navigation-items,
 .adress-items {
     display: flex;
-    column-gap: 40px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .main-navigation {
@@ -130,7 +133,7 @@ h1 {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    width: 496px;
+    max-width: 496px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
@@ -146,6 +149,10 @@ h1 {
     line-height: 1.5;
     letter-spacing: 0.04em;
     display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
     margin: 0 auto;
     padding: 16px 32px;
 }
@@ -181,6 +188,7 @@ h3 {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .visually-hidden {
@@ -205,7 +213,7 @@ h3 {
 
 .advantages-item {
     display: flex;
-    width: width: calc((100% - 72px) / 4);
+    width: calc((100% - 72px) / 4);
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
@@ -231,7 +239,7 @@ h3 {
     text-align: center;
     display: inline-flex;
     width: calc((100% - 72px) / 4)
-    padding-bottom: 32px;
+    padding: 32px 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -253,7 +261,7 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     flex-shrink: 0;
-    border-bottom: 1px solid #E7E9FC;
+    border: 1px solid #E7E9FC;
 }
 
 .portfolio-descr, .team-descr {
@@ -275,6 +283,8 @@ h3 {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
         }
 
 .logo-part {
@@ -288,6 +298,5 @@ h3 {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-top: 16px;
     width: 264px;
 }
