@@ -46,8 +46,7 @@ img {
     border-bottom: 1px solid #E7E9FC;
 }
 
-.navigation-items,
-.adress-items {
+.navigation-items {
     display: flex;
     gap: 40px;
     padding: 24px 0;
@@ -248,7 +247,7 @@ h3 {
 
 .team-descr {
     padding: 32px 0;
-    border: 1px solid #E7E9FC;
+    border: 1px solid #e7e9fc;
     border-top: 0;
 }
 
