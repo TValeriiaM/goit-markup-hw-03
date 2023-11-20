@@ -46,10 +46,9 @@ img {
     border-bottom: 1px solid #E7E9FC;
 }
 
-.navigation-items {
+.navigation-items, .adress-items {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .main-navigation {
@@ -83,6 +82,7 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .link-active:active {
