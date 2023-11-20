@@ -50,8 +50,7 @@ img {
 .adress-items {
     display: flex;
     gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 0;
 }
 
 .main-navigation {
@@ -247,6 +246,12 @@ h3 {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+.team-descr {
+    padding: 32px 0;
+    border: 1px solid #E7E9FC;
+    border-top: 0;
+}
+
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -261,10 +266,9 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     flex-shrink: 0;
-    border: 1px solid #E7E9FC;
 }
 
-.portfolio-descr, .team-descr {
+.portfolio-descr {
     padding: 32px 16px;
 }
 
