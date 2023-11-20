@@ -236,7 +236,7 @@ h3 {
     background:#FFF;
     text-align: center;
     display: inline-flex;
-    width: calc((100% - 72px) / 4)
+    width: calc((100% - 72px) / 4);
     padding: 32px 0;
     flex-direction: column;
     justify-content: center;
